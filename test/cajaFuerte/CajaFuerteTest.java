@@ -9,8 +9,14 @@ public class CajaFuerteTest {
 	@Test
 	public void alCrearCajaFuerteDebeEstarAbiertaTest() {
 		CajaFuerte caja = new CajaFuerte();
-		assertTrue(caja.estaAbierta()); 
-		
+		assertTrue(caja.estaAbierta()); 	
+	}
+	
+	@Test
+	public void alCerrarCajaFuerteDebeEstarCerradaTest() {
+		CajaFuerte caja = new CajaFuerte();
+		caja.cerrarCaja();
+		assertFalse(caja.estaAbierta()); 	
 	}
 
 }

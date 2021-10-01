@@ -9,9 +9,12 @@ public class CajaFuerte {
 		
 	}
 
-	public boolean estaAbierta() {
-		
+	public boolean estaAbierta() {	
 		return this.estado;
+	}
+
+	public void cerrarCaja() {
+		this.estado = false;
 	}
 
 }
